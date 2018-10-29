@@ -1,5 +1,10 @@
 # Clicksign::Webhooks
 
+[![Gem Version](https://badge.fury.io/rb/clicksign-webhooks.svg)](https://badge.fury.io/rb/clicksign-webhooks)
+[![Build Status](https://travis-ci.org/NexoosBR/clicksign-webhooks.svg?branch=master)](https://travis-ci.org/NexoosBR/clicksign-webhooks)
+[![Maintainability](https://api.codeclimate.com/v1/badges/13f56cf85ed77ddf6bd1/maintainability)](https://codeclimate.com/github/NexoosBR/clicksign-webhooks/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/13f56cf85ed77ddf6bd1/test_coverage)](https://codeclimate.com/github/NexoosBR/clicksign-webhooks/test_coverage)
+
 To fully understand Clicksign webhooks system, click [here](https://developers.clicksign.com/docs/introducao-a-webhooks)
 
 ## Installation
