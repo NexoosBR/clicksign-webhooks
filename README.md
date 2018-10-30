@@ -51,8 +51,11 @@ Then create a initializer using a `Proc` to each possible event:
 
 ```ruby
 Clicksign::Webhooks.configure do |config|
-  # You have to setup one Proc for each event
+  # Setup HMAC
+  config.hmac = ENV['CLICKSIGN_HMAC_KEY']
 
+  # You have to setup one Proc for each event
+  # Available events are described below
   config.on_upload = ->(event) {
     # Do something with sent event parameters
   }
@@ -102,7 +105,7 @@ The argument `event` is a `Hash`:
 - on_remove_signer
 - on_sign
 - on_close
-- on_auto_close,
+- on_auto_close
 - on_deadline
 - on_cancel
 - on_update_deadline
