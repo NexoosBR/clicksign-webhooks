@@ -1,3 +1,4 @@
+require "clicksign/webhooks/version"
 require "clicksign/webhooks/engine"
 begin
   require "dotenv/load"
