@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    clicksign-webhooks (0.0.1)
+    clicksign-webhooks (0.0.2)
       rails (> 4)
 
 GEM
