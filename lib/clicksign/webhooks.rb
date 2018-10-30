@@ -1,4 +1,9 @@
 require "clicksign/webhooks/engine"
+begin
+  require "dotenv/load"
+  require "byebug"
+rescue LoadError
+end
 
 module Clicksign
   module Webhooks
