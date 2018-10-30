@@ -1,5 +1,7 @@
 require "clicksign/webhooks/version"
 require "clicksign/webhooks/engine"
+require "clicksign/webhooks/hmac"
+
 begin
   require "dotenv/load"
   require "byebug"
@@ -13,8 +15,15 @@ module Clicksign
       :deadline, :cancel, :update_deadline, :update_auto_close
     ].map { |event| "on_#{event}" }
 
+    DEFAULT_EVENT_HANDLER = -> (event) {
+      "Missing config for event: #{event.inspect}".tap do |message|
+        Rails.logger.debug(message)
+      end
+    }
+
     class << self
-      attr_accessor *EVENTS
+
+      attr_accessor :hmac, *EVENTS
 
       def configure
         yield(self) if block_given?
