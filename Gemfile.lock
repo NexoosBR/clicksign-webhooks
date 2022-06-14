@@ -151,8 +151,8 @@ PLATFORMS
 DEPENDENCIES
   byebug
   clicksign-webhooks!
-  dotenv-rails (~> 2.5)
-  rspec-rails (~> 3.0)
+  dotenv-rails
+  rspec-rails
   simplecov (~> 0.16)
 
 BUNDLED WITH
