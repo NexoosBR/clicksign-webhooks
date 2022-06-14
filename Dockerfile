@@ -1,4 +1,4 @@
-FROM ruby:2.7.6
+FROM ruby:2.7.6-alpine
 
 RUN apt-get update -qq
 RUN apt-get install -y nodejs
@@ -14,4 +14,3 @@ COPY lib/clicksign/webhooks/version.rb /clicksign_webhooks/lib/clicksign/webhook
 RUN bundle install
 
 ADD . /clicksign_webhooks
-
