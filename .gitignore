@@ -14,3 +14,5 @@ spec/test_app/tmp/
 .env
 .byebug_history
 coverage/*
+
+Gemfile.lock
